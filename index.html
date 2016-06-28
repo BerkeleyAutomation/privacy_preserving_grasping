@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Privacy-Preserving Grasp Planning by BerkeleyAutomation</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Privacy-Preserving Grasp Planning/h1>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/BerkeleyAutomation/caging/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/BerkeleyAutomation/caging/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/BerkeleyAutomation/caging">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/BerkeleyAutomation">BerkeleyAutomation</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a id="privacy-preserving-grasp-planning" class="anchor" href="#privacy-preserving-grasp-planning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Privacy-Preserving Grasp Planning</h1>
+
+<p><img src="https://github.com/BerkeleyAutomation/privacy_preserving_grasping/raw/gh-pages/images/privacy_grasping_teaser.eps" alt="Energy-Bounded Caging"><figcaption>Overview of privacy-preserving grasp planning. Industrial users label proprietary zones on the part with a graphical interface. The masked object is then transmitted to a Cloud-based grasp planner along with its stable poses. The grasp planner computes a set of grasps for each stable pose and returns the grasp sets to the user.</figcaption></p>
+
+<h3>
+<a id="abstract" class="anchor" href="#abstract" aria-hidden="true"><span class="octicon octicon-link"></span></a>Abstract</h3>
+
+<p>To support industrial automation, systems such as GraspIt! and Dex-Net 1.0 provide ``Grasp Planning as a Service" (GPaaS).
+This can allow a manufacturer setting up an automated assembly line for a new product to upload part geometry via the Internet to the service and receive a ranked set of robust grasp configurations.
+As industrial users may be reluctant to share proprietary details of product geometry with any outside parties, this paper proposes a privacy-preserving approach and presents an algorithm where a masked version of the part boundary is uploaded, allowing proprietary aspects of the part geometry to remain confidential.  
+One challenge is the tradeoff between grasp coverage and privacy: balancing the desire for a rich set of alternative grasps based on analysis of graspable surfaces (coverage) against the user's desire to maximize privacy.
+We introduce a grasp coverage metric based on dispersion from motion planning, and plot its relationship with privacy (the amount of the object surface that is masked).
+We implement our algorithm for Dex-Net 1.0 and present case studies of the privacy-coverage tradeoff on a set of 23 industrial parts.
+Results suggest that masking the part using the convex hull of the proprietary zone can provide grasp coverage with minor distortion to the object similarity metric used to accelerate grasp planning in Dex-Net 1.0.
+</p>
+
+<h3>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span class="octicon octicon-link"></span></a>References</h3>
+
+<ul>
+<li>Privacy-Preserving Grasp Planning.
+Jeffrey Mahler, Brian Hou, Sherdil Niyaz, Florian T. Pokorny, Ramu Chandra, Ken Goldberg. IEEE Conference on Automation Science and Engineering, 2016 (To Appear). [<a href="https://github.com/BerkeleyAutomation/privacy_preserving_grasping/raw/gh-pages/docs/case2016_privacy_final.pdf">PDF</a>]</li>
+</ul>
+
+<a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributors</h3>
+
+<p>This is an ongoing project at UC Berkeley with contributions from:<br>
+Jeffrey Mahler, <a href="http://brianhou.com">Brian Hou</a>, Sherdil Niyaz, <a href="http://www.cs.berkeley.edu/%7Eftpokorny/">Florian T. Pokorny</a>, <a href="http://goldberg.berkeley.edu">Ken Goldberg</a></p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Please Contact Jeffrey Mahler <a href="mailto:jmahler@berkeley.edu">jmahler@berkeley.edu</a> or <a href="goldberg.berkeley.edu">Prof. Ken Goldberg</a>, Director of Automation Sciences Lab at <a href="mailto:goldberg@berkeley.edu">goldberg@berkeley.edu</a></p>
+
+<hr>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a><br>Privacy-Preserving Grasping by <a href="automation.berkeley.edu">Automation Lab</a> is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-71985069-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
